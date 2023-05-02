@@ -1,9 +1,61 @@
-.Card{
-  border: 1px solid #ccc;
-  width: 350px;
-  border-radius: 7px;
-  padding: 20px;
-  margin: 20px;
-  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 
+  minmax(12rem, 16rem));
+  gap: 2rem;
+  justify-content: center;
+}
+
+.h2 {
+  text-align: center;
+  color: goldenrod;
+}
+
+.card{
+  overflow: hidden;
+  box-shadow: 0 2px 20px;
+  border-radius: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  cursor: pointer;
+  transition: 200ms ease-in;
+
+}
+
+.card__image {
+  height: 12rem;
+  width: 100%;
+  object-fit: cover;
+}
+
+.card__title {
+  padding: 1rem;
+
+}
+
+.card__description {
+  padding: 0 1rem;
+
+}
+
+.card__btn {
+  padding:1rem ;
+  font-family: inherit;
+  font-weight: bold;
+  font-size: 1rem;
+  margin: 1rem;
+  border: 2px solid;
+  background: transparent;
+  color: lightblue;
+  border-radius: auto;
+  transition:auto;
+
+}
+
+.hover {
+  transform:scale(1.02) ;
+  background:red ;
+  color: azure;
 }
 
