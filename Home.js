@@ -3,7 +3,6 @@ import { Link } from 'react-router-dom';
 import BannerImage from '../assets/BackgroundIMG.jpg';
 import '../styles/Home.css';
 
-import MyCard from '../components/MyCard';
 
 
 function Home() {
